@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/about', function () {
+    return view('about', [
+        "name" => "Catur Saputro",
+        "email" => "caturcno.cr@gmail.com",
+        "image" => "LegoProfil.jpg"
+    ]);
+});
+
+Route::get('/blog', function () {
+    return view('posts');
 });

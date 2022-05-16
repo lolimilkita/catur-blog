@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about', [
         "name" => "Catur Saputro",
-        "email" => "caturcno.cr@gmail.com",
+        "email" => "catur.ccd@gmail.com",
         "image" => "LegoProfil.jpg"
     ]);
 });

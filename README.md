@@ -8,7 +8,7 @@ Tutorial dari <a href="https://youtube.com/playlist?list=PLFIM0718LjIWiihbBIq-SW
 #PHP 8.2
 #Faker library
 
-<img src="https://github.com/lolimilkita/coba-laravel/blob/main/img_readme/blogp.png">
+<img src="https://github.com/lolimilkita/coba-laravel/blob/master/img_readme/blogp.png">
 
 ##Perekembangan tutorial
 ###12. Update UI

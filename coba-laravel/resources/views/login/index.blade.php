@@ -1,50 +1,6 @@
 @extends('layouts.main')
 
 @section('container')
-    {{-- <div class="row justify-content-center">
-        <div class="col-md-5">
-            <main class="form-signin w-100 m-auto">
-                <h1 class="h3 my-3 fw-normal text-center">Please login</h1>
-                <form>
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
-                    </div>
-                
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-                </form>
-                <small class="d-block text-center my-3">Not registered? <a href="/register">Regiter now!</a></small>
-            </main>
-        </div>
-    </div> --}}
-
-    {{-- <div class="row justify-content-center" id="row-login">
-		<div class="col-md-6 px-4" style="background-color: rgb(234, 234, 234)">
-            <img src="img/for-login.png" class="img-login" alt="...">
-		</div>
-        <div class="col-md-6 px-4" id="col-login-2">
-            <main class="form-signin w-100 m-auto">
-                <h1 class="h3 my-3 fw-normal text-center">Please login</h1>
-                <form>
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
-                    </div>
-                
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-                </form>
-                <small class="d-block text-center my-3">Not registered? <a href="/register">Regiter now!</a></small>
-            </main>
-        </div>
-	</div> --}}
 
     <div class="row justify-content-center">
 		<div class="col">
@@ -56,15 +12,15 @@
 				</div>
 
 				<div class="card border-0" id="cardInputLogin">
-					<h3 class="card-header text-start" id="cardHeaderLogin">Login</h2>
+					<h2 class="card-header text-start my-4" id="cardHeaderLogin">Login</h2>
 					<div class="card-body">
                         <form>
                             <div class="form-floating mb-4">
-                                <input type="email" class="form-control border-dark border-opacity-75" id="floatingInput" placeholder="name@example.com">
+                                <input type="email" class="form-control border-dark border-opacity-75" name="email" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Email / Username</label>
                             </div>
                             <div class="form-floating mb-5">
-                                <input type="password" class="form-control border-dark border-opacity-75"" id="floatingPassword" placeholder="Password">
+                                <input type="password" class="form-control border-dark border-opacity-75" name="password" id="floatingPassword" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
                             </div>
                             <button class="w-100 btn btn-lg btn-dark" id="btn-login" type="submit">Login</button>
@@ -94,7 +50,5 @@
 
 		</div>
 	</div>
-
-    
 
 @endsection

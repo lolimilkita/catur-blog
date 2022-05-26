@@ -1,3 +1,12 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+    /*========== Font and typography ==========*/
+    --body-font: "Poppins", sans-serif;
+    --bs-body-font-family: var(--body-font);
+}
+
 .form-signin .form-floating:focus-within {
     z-index: 2;
 }
@@ -12,4 +21,158 @@
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+/* ============= LOGIN ============ */
+
+#cardLogin {
+    background-color: rgb(234, 234, 234);
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+#cardImgLogin {
+    border-radius: 12px;
+    background-color: rgb(234, 234, 234);
+    display: none;
+}
+
+.imgLogin {
+    border-radius: 12px;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+#cardInputLogin {
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    background-color: rgb(234, 234, 234);
+}
+
+#cardHeaderLogin {
+    border-radius: 12px;
+    background-color: rgb(234, 234, 234);
+    border: 0px;
+    text-align: center;
+}
+
+#floatingInput {
+    border-radius: 12px;
+    height: 62px;
+}
+
+#floatingPassword {
+    border-radius: 12px;
+}
+
+#btn-login {
+    background-color: rgba(37, 37, 37, 1);
+    padding: 12px 0;
+    border-radius: 12px;
+}
+
+.or {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.or:before,
+.or:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid;
+    border-color: rgb(126, 126, 126);
+    margin: auto;
+}
+
+.or:before {
+    margin-right: 10px;
+}
+
+.or:after {
+    margin-left: 10px;
+}
+
+#dont-have-account {
+    margin-left: 2rem;
+}
+
+/* ============ MEDIA QUERIES ============== */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #cardLogin {
+        margin: 2rem 0;
+    }
+
+    .imgLogin {
+        height: 100%;
+    }
+
+    #cardImgLogin {
+        display: inline;
+    }
+
+    #cardImgLoginAtas {
+        display: none;
+    }
+
+    #dont-have-account {
+        margin-left: 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #cardImgLoginAtas {
+        display: none;
+    }
+
+    #cardInputLogin {
+        padding: 2rem 3rem;
+        margin: 0 2rem;
+    }
+
+    #dont-have-account {
+        margin-left: 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #cardImgLoginAtas {
+        display: none;
+    }
+
+    #dont-have-account {
+        margin-left: 2rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #cardImgLoginAtas {
+        display: none;
+    }
+
+    #dont-have-account {
+        margin-left: 2rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    #cardImgLoginAtas {
+        display: none;
+    }
+
+    .imgLogin {
+        height: auto;
+    }
+
+    #dont-have-account {
+        margin-left: 2rem;
+    }
 }

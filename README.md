@@ -28,3 +28,7 @@ Disini belajar membuat query search yang komplek, jadi di web ada pencarian post
 ### 14. Update View Login & Register
 
 Membuat halaman login dan register
+
+### Update Halaman Login
+
+<img src="https://github.com/lolimilkita/coba-laravel/blob/master/img_readme/tiga_login.png">

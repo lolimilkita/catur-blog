@@ -29,6 +29,8 @@ Disini belajar membuat query search yang komplek, jadi di web ada pencarian post
 
 Membuat halaman login dan register
 
-### Update Halaman Login
+### Update Halaman Login & Register
 
 <img src="https://github.com/lolimilkita/coba-laravel/blob/master/img_readme/tiga_login.png">
+
+<img src="https://github.com/lolimilkita/coba-laravel/blob/master/img_readme/tiga_register.png">

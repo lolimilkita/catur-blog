@@ -38,3 +38,7 @@ Membuat halaman login dan register
 ### 15. User Registration
 
 Membuat backend halaman registrasi, sekarang sudah bisa registrasi dan disimpan di dataabase dengan rules dan custom messase error!
+
+### 16. User Login & Middleware
+
+Membuat backend untuk login ke aplikasi, merubah tampilan navbar jika login ada tombol logout. Tidak bisa melihat dashboard jika tidak login, ada auth dan guest.

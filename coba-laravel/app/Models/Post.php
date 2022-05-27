@@ -61,4 +61,10 @@ class Post extends Model
     {
         return $this->belongsTo(User::class, 'user_id');
     }
+
+    // If you would like model binding to always use a database column other than id when retrieving a given model class, you may override the getRouteKeyName method on the Eloquent model:
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

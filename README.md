@@ -42,3 +42,9 @@ Membuat backend halaman registrasi, sekarang sudah bisa registrasi dan disimpan 
 ### 16. User Login & Middleware
 
 Membuat backend untuk login ke aplikasi, merubah tampilan navbar jika login ada tombol logout. Tidak bisa melihat dashboard jika tidak login, ada auth dan guest.
+
+### 17. Dashboard UI
+
+Membuat halaman dashboard, setiap user dapat login dan melihat semua postingan mereka
+
+<img src="https://github.com/lolimilkita/coba-laravel/blob/master/img_readme/empat.png">

@@ -42,21 +42,42 @@
 				<div class="card border-0" id="cardInputLogin">
 					<h2 class="card-header text-start my-4" id="cardHeaderLogin">Register</h2>
 					<div class="card-body">
-                        <form>
+                        <form actioin="/register" method="post">
+                            @csrf
                             <div class="form-floating mb-4">
-                                <input type="text" class="form-control border-dark border-opacity-75" name="name" id="floating-name" placeholder="Name" style="border-radius: 12px; height: 62px;">
+                                <input type="text" class="form-control border-opacity-75 @error('name') is-invalid & border-danger @enderror" name="name" id="floating-name" placeholder="Name" value="{{ old('name') }}">
+                                @error('name')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                                 <label for="floating-name">Name</label>
                             </div>
                             <div class="form-floating mb-4">
-                                <input type="text" class="form-control border-dark border-opacity-75" name="username" id="floating-username" placeholder="Username" style="border-radius: 12px; height: 62px;">
+                                <input type="text" class="form-control border-opacity-75 @error('username') is-invalid & border-danger @enderror" name="username" id="floating-username" placeholder="Username" value="{{ old('username') }}">
+                                @error('username')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                                 <label for="floating-username">Username</label>
                             </div>
                             <div class="form-floating mb-4">
-                                <input type="email" class="form-control border-dark border-opacity-75" name="email" id="floatingInput" placeholder="name@example.com">
+                                <input type="email" class="form-control border-opacity-75 @error('email') is-invalid & border-danger @enderror" name="email" id="floatingInput" placeholder="name@example.com" value="{{ old('email') }}">
+                                @error('email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                                 <label for="floatingInput">Email address</label>
                             </div>
                             <div class="form-floating mb-5">
-                                <input type="password" class="form-control border-dark border-opacity-75" name="password" id="floatingPassword" placeholder="Password">
+                                <input type="password" class="form-control border-opacity-75 @error('password') is-invalid & border-danger @enderror" name="password" id="floatingPassword" placeholder="Password">
+                                @error('password')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                                 <label for="floatingPassword">Password</label>
                             </div>
                             <button class="w-100 btn btn-lg btn-dark" id="btn-login" type="submit">Register</button>

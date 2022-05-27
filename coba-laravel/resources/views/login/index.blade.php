@@ -14,13 +14,19 @@
 				<div class="card border-0" id="cardInputLogin">
 					<h2 class="card-header text-start my-4" id="cardHeaderLogin">Login</h2>
 					<div class="card-body">
+                        @if(session()->has('success'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{ session('success') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
                         <form>
                             <div class="form-floating mb-4">
-                                <input type="email" class="form-control border-dark border-opacity-75" name="email" id="floatingInput" placeholder="name@example.com">
+                                <input type="email" class="form-control border-opacity-75" name="email" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Email / Username</label>
                             </div>
                             <div class="form-floating mb-5">
-                                <input type="password" class="form-control border-dark border-opacity-75" name="password" id="floatingPassword" placeholder="Password">
+                                <input type="password" class="form-control border-opacity-75" name="password" id="floatingPassword" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
                             </div>
                             <button class="w-100 btn btn-lg btn-dark" id="btn-login" type="submit">Login</button>

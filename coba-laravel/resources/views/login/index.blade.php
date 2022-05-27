@@ -14,15 +14,30 @@
 				<div class="card border-0" id="cardInputLogin">
 					<h2 class="card-header text-start my-4" id="cardHeaderLogin">Login</h2>
 					<div class="card-body">
+                        
                         @if(session()->has('success'))
                             <div class="alert alert-success alert-dismissible fade show" role="alert">
                                 {{ session('success') }}
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         @endif
-                        <form>
+
+                        @if(session()->has('loginError'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{ session('loginError') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
+                        
+                        <form action="/login" method="post">
+                            @csrf
                             <div class="form-floating mb-4">
-                                <input type="email" class="form-control border-opacity-75" name="email" id="floatingInput" placeholder="name@example.com">
+                                <input type="email" class="form-control border-opacity-75 @error('email') is-invalid @enderror" name="email" id="floatingInput" placeholder="name@example.com" value="{{ old('email') }}" autofocus>
+                                @error('email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                                 <label for="floatingInput">Email / Username</label>
                             </div>
                             <div class="form-floating mb-5">

@@ -57,13 +57,13 @@
     text-align: center;
 }
 
-#floatingInput {
+#floating-name,
+#floating-username,
+#floatingInput,
+#floatingPassword {
+    border-color: rgba(84, 87, 90, 1);
     border-radius: 12px;
     height: 62px;
-}
-
-#floatingPassword {
-    border-radius: 12px;
 }
 
 #btn-login {

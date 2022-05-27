@@ -34,3 +34,7 @@ Membuat halaman login dan register
 <img src="https://github.com/lolimilkita/coba-laravel/blob/master/img_readme/tiga_login.png">
 
 <img src="https://github.com/lolimilkita/coba-laravel/blob/master/img_readme/tiga_register.png">
+
+### 15. User Registration
+
+Membuat backend halaman registrasi, sekarang sudah bisa registrasi dan disimpan di dataabase dengan rules dan custom messase error!

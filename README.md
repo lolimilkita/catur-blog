@@ -58,3 +58,7 @@ Membuat halaman create post yang bertujuan untuk membuat post baru, disini mengg
 ### 19. Validation & Insert Post
 
 Membuat backend untuk create post
+
+### 20. Update & Delete Post
+
+Melengkapi fitur CRUD pada post

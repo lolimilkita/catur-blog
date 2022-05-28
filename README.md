@@ -51,6 +51,10 @@ Membuat halaman dashboard, setiap user dapat login dan melihat semua postingan m
 
 ### 18. Create Post Form
 
-Membuat ahalaman create post yang bertujuan untuk membuat post baru, disini menggunakan eloquent sluggable untuk mengatur slug otomatis, dan Trix Editor untuk membuat body postnya.
+Membuat halaman create post yang bertujuan untuk membuat post baru, disini menggunakan eloquent sluggable untuk mengatur slug otomatis, dan Trix Editor untuk membuat body postnya.
 
 <img src="https://github.com/lolimilkita/coba-laravel/blob/master/img_readme/lima.png">
+
+### 19. Validation & Insert Post
+
+Membuat backend untuk create post

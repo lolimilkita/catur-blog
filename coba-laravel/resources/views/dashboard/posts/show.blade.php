@@ -17,7 +17,6 @@
                     {!! $post->body !!}
                 </article>
 
-                <a href="/posts" class="text-decoration-none d-block mt-3">Back to post</a>
             </div>
         </div>
     </div>

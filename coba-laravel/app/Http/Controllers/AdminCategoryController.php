@@ -14,7 +14,19 @@ class AdminCategoryController extends Controller
      */
     public function index()
     {
-        //
+        // Jadi middle ware sendiri "IsAdmin"
+        // 
+        // if(auth()->guest() || auth()->user()->username !== 'catursptr0' ) {
+        //     abort(403);
+        // }
+
+        // if(!auth()->check() || auth()->user()->username !== 'catursptr0' ) {
+        //     abort(403);
+        // }
+
+        return view('dashboard.categories/index', [
+            'categories' => Category::all()
+        ]);
     }
 
     /**

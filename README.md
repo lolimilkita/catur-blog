@@ -62,3 +62,15 @@ Membuat backend untuk create post
 ### 20. Update & Delete Post
 
 Melengkapi fitur CRUD pada post
+
+### 21. Upload Image
+
+Fitur upload iamge jika user ingin mengupload iamge sendiri di post mereka dan jika tidak ingin akan otomatis menggunakan image dari unsplash api
+
+### 22. Preview, Update & Delete Image
+
+Fitur preview image di edit atau create post, dan serta fitur update delete image dengan tambahan kondisi menghapus file storage yang lama
+
+### 23. Authorization
+
+Fitur membedakan user admin dengan user biasa atau guest. Sederhana dengan fitur dari Laravel Gate dan midddleware.
